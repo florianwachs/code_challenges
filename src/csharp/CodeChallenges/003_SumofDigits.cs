@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-namespace CodeChallenges;
+﻿namespace CodeChallenges;
 
 public class SumofDigits_003
 {
