@@ -17,11 +17,11 @@ public class WeirdCase_004
             return string.Empty;
         }
 
-        return string.Join("", input.Select((c, idx) => (c, idx % 2) switch
+        return string.Join(" ", input.Split(" ", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Select(i=>  string.Join("", i.Select((c, idx) => (c, idx % 2) switch
          {
              (' ', _) => ' ',
              (_, 0) => Char.ToUpper(c),
              _ => Char.ToLower(c),
-         }));
+         }))));
     }
 }
