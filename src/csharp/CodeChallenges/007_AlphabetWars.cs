@@ -1,6 +1,6 @@
 ﻿namespace CodeChallenges;
 
-public class AlphabetWars
+public class AlphabetWars_007
 {
     [Theory]
     [InlineData("z", "Right side wins!")]
